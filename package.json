@@ -12,7 +12,11 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@nuxtjs/firebase": "^8.2.2",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/pwa": "^3.3.5",
     "axios": "^0.27.2",
     "core-js": "^3.19.3",

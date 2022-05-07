@@ -1,14 +1,12 @@
 <template>
-  <div class="admin-auth-page">
-    <div class="auth-container">
-      <p class="title is-1 is-spaced">user: {{ this.email }}</p>
-      <form @submit.prevent="onSubmit">
-        <input type="email" v-model="email" placeholder="eメール">
-        <input type="password" v-model="password" placeholder="パスワード">
-        <button type="submit">{{ isLogin ? 'ログイン' : 'サインアップ' }}</button>
-        <button type="button" @click="isLogin = !isLogin">{{ isLogin ? 'サインアップ' : 'ログイン' }}へ切り替える</button>
-      </form>
-    </div>
+  <div id="authentication">
+    <p class="name-box">user: <span class="name">{{ this.email }}</span></p>
+    <form @submit.prevent="onSubmit">
+      <input type="email" v-model="email" placeholder="eメール">
+      <input type="password" v-model="password" placeholder="パスワード">
+      <button type="submit">{{ isLogin ? 'ログインする' : 'サインアップする' }}</button>
+      <button type="button" @click="isLogin = !isLogin">{{ isLogin ? 'サインアップ' : 'ログイン' }}へ切り替える</button>
+    </form>
   </div>
 </template>
 

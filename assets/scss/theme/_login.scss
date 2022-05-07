@@ -1,0 +1,15 @@
+#authentication {
+  padding: 20px;
+
+  .name-box {
+    font-weight: bold;
+    .name {
+      font-weight: normal;
+    }
+  }
+  form {
+    input, button {
+      border: 1px solid #000;
+    }
+  }
+}

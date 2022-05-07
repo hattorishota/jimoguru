@@ -31,19 +31,52 @@
         transform: translate(-50%, -50%);
         color: #fff;
         font-size: 20px;
-        font-weight: bold;
         width: 100%;
         text-align: center;
 
+        .txt1 {
+          font-weight: bold;
+        }
         .title {
           max-width: 500px;
           width: 100%;
           margin: 40px auto;
         }
-        .anchor {
-          position: relative;
-          font-size: 16px;
-          display: inline-block;
+        .btn-box {
+          .anchor {
+            position: relative;
+            font-size: 16px;
+            display: inline-block;
+          }
+          .search-box {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+  
+            .search {
+              font-weight: bold;
+            }
+            &::before {
+              content: "";
+              background-image: url(@/assets/images/common/search1.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .login-box {
+            .login {
+              color: #fff;
+              background-color: #D0101B;
+              width: 240px;
+              height: 48px;
+              line-height: 48px;
+            }
+          }
         }
       }
     }
