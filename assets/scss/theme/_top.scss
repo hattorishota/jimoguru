@@ -40,7 +40,7 @@
         .title {
           max-width: 500px;
           width: 100%;
-          margin: 40px auto;
+          margin: 60px auto;
         }
         .btn-box {
           .anchor {
@@ -49,32 +49,53 @@
             display: inline-block;
           }
           .search-box {
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            gap: 15px;
             margin-bottom: 30px;
-  
+
             .search {
-              font-weight: bold;
-            }
-            &::before {
-              content: "";
-              background-image: url(@/assets/images/common/search1.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-              display: inline-block;
-              width: 20px;
-              height: 20px;
-            }
-          }
-          .login-box {
-            .login {
               color: #fff;
               background-color: #D0101B;
               width: 240px;
               height: 48px;
               line-height: 48px;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+
+              &::before {
+                content: "";
+                background-image: url(@/assets/images/common/search1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+          .login-box {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            gap: 15px;
+  
+            .login {
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+
+              &::after {
+                content: "";
+                background-image: url(@/assets/images/common/login1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+              }
             }
           }
         }
@@ -86,7 +107,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 10px 40px;
   box-shadow: rgb(0 0 0 / 16%) 0px 0px 8px;
   position: fixed;
   top: 0;

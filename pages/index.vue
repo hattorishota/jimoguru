@@ -7,7 +7,7 @@
           <img :src="fvImg" alt="">
         </div>
         <div class="txt-box">
-          <p class="txt1">地元の人だけが知るお店に行くなら</p>
+          <!-- <p class="txt1">地元の人のみぞ知るお店に行くなら</p> -->
           <h2 class="title"><img :src="logoImg" alt=""></h2>
           <div class="btn-box">
             <div class="search-box">
